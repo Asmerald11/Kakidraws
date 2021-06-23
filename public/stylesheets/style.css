@@ -180,20 +180,47 @@ a.activo,nav ul li a:hover{
 
 /* Acerca de mi style */
 
-.galeria {
-  display: flex;
-  justify-content: space-around;
-}
-
 .iacerca {
-  float: left;
-  margin: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  align-content: center;
+  margin: 0 auto;
 }
 
-.tacerca {
-  text-align: justify;
-  font-size: 1.5rem;
-  margin: 2rem;
+.iacerca p {
+  float: left;
+  font-size: 1.87vw;
+  width: 50%;
+}
+
+.iacerca img {
+  float: right;
+  width: 45%;
+  height: 50%; 
+  border-radius: 30px; 
+  margin-left: 20px;
+}
+
+.iacerca h1{
+  width: 100%; 
+  text-align: center; 
+  padding-top: 40px; 
+  padding-bottom: 40px;
+}
+
+@media (max-width:979px) {
+  .iacerca img{
+      width: 90%;
+  }
+  .iacerca p{
+      font-size: 13px;
+      width: 100%;
+  }
+  h1{
+      padding-top: 0px;
+      padding-bottom: 10px;
+  }
 }
 
 /* Footer style */
