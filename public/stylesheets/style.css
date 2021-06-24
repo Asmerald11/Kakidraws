@@ -1,3 +1,7 @@
+body{
+  font-family: 'Jaldi', sans-serif;
+}
+
 /* Header style */
 
 *{
@@ -38,8 +42,9 @@ nav ul li a{
 }
 
 a.activo,nav ul li a:hover{
-  background: blue;
+  background: #CD9BC9;
   transition: .5s;
+  color: #433760;
 }
 
 .botoncheck{
@@ -61,6 +66,7 @@ a.activo,nav ul li a:hover{
   line-height: 70px;
   padding: 0 100px;
   font-weight: bold;
+  font-family: 'Allura', cursive;
 }
 
 .Logo a{
@@ -87,7 +93,7 @@ a.activo,nav ul li a:hover{
       position: absolute;
       width: 100%;
       height: 100%;
-      background: green;
+      background-image: url(https://i2.wp.com/pixelstalk.net/wp-content/uploads/2016/08/Sky-Scenery-1920x1080-Wallpaper.jpg);
       top: 80px;
       left: -100%;
       text-align: center;
@@ -103,7 +109,8 @@ a.activo,nav ul li a:hover{
   }
   a:hover,a.active{
       background: none;
-      color: blue;
+      color: #CD9BC9;
+      color: #433760;
   }
   #check:checked ~ .cabecera{
   left: 0;
@@ -116,7 +123,7 @@ a.activo,nav ul li a:hover{
 /* Index style */
 
 .cuerpo{
-  background: #ECE2D0;
+  background: #f7f7f6;
 }
 
 .Kaki {
@@ -207,6 +214,7 @@ a.activo,nav ul li a:hover{
   text-align: center; 
   padding-top: 40px; 
   padding-bottom: 40px;
+  font-family: 'Allura', cursive;
 }
 
 @media (max-width:979px) {
@@ -238,8 +246,8 @@ footer{
   flex-flow: row wrap;
   padding: 3.125rem;
   color: white;
-  background-image: url(https://i2.wp.com/pixelstalk.net/wp-content/uploads/2016/08/Sky-Scenery-1920x1080-Wallpaper.jpg);
-  background-repeat: round;
+  background-image: url(/images/banner.jpg);
+  background-repeat: round; 
   margin-top: 4rem;
 }
 
@@ -289,25 +297,26 @@ h2{
 }
 
 .box a{
-  color: #DCB2C5;
+  color: #f7f7f6;
 }
 
 .footer-bottom{
   text-align: center;
-  color: #D893AE;
+  color: #f7f7f6;
 }
 
 .footer-left p{
   padding-right: 20%;
-  color: #DCB2C5;
+  color: #f7f7f6;
 }
 
 .socials a{
-  background: #DCB2C5;
+  background: #f7f7f6;
   width: 40px;
   height: 40px;
   display: inline-block;
   margin-right: 10px;
+  border-radius: 7px;
 }
 
 .socials a i{
