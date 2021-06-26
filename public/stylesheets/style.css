@@ -231,6 +231,99 @@ a.activo,nav ul li a:hover{
   }
 }
 
+/* Trabajo style */
+
+.titulares{
+  width: 100%; 
+  text-align: center; 
+  padding-top: 40px; 
+  padding-bottom: 40px;
+  font-family: 'Allura', cursive;
+}
+
+.galeria{
+  text-align: center;
+  flex-wrap: wrap;
+  width: 90%;
+  align-content: center;
+  margin: 0 auto;
+}
+
+.cuadro {
+  margin: 5px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  width: 250px;
+}
+
+.cuadro:hover {
+  border: 3px solid rgb(179, 131, 181);
+}
+
+.galeria img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/* Contacto style */
+
+.contactos{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 80%;
+  text-align: center;
+  margin:0 auto;
+}
+
+.contactos img{
+  width: 45%;
+  height: auto;
+}
+
+.contactos a{
+  text-decoration: none;
+  color: #dcb2c5;
+  font-family: 'Allura', cursive;
+}
+
+.izq{
+  flex: auto;
+  width: 45%;
+}
+
+.der{
+  flex: auto;
+  width: 45%;
+}
+
+.izq span{
+  display: block;
+  font-size: 55px;
+}
+
+.der span{
+  display: block;
+  font-size: 55px;
+}
+
+@media (max-width: 800px){
+  .contactos img{
+      width: 100%;
+  }
+  .izq{
+      width: 100%;
+  }
+  .der{
+      width: 100%;
+  }
+}
+
 /* Footer style */
 
 .coki {
@@ -246,7 +339,7 @@ footer{
   flex-flow: row wrap;
   padding: 3.125rem;
   color: white;
-  background-image: url(/images/banner.jpg);
+  background-image: url(/images/footer.jpg);
   background-repeat: round; 
   margin-top: 4rem;
 }
