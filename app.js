@@ -17,9 +17,9 @@ const comisionesRouter = require('./routes/comisiones');
 const contactoRouter = require('./routes/contacto');
 const contactoaRouter = require('./routes/contactoa');
 const registroRouter = require('./routes/registro');
-const authRouter = require('./routes/auth');
-const comentariosRouter = require('./routes/comentarios');
-const comentsRouter = require('./routes/coments');
+//const authRouter = require('./routes/auth');
+//const comentariosRouter = require('./routes/comentarios');
+//const comentsRouter = require('./routes/coments');
 
 const app = express();
 
@@ -57,8 +57,8 @@ app.use('/comisiones', comisionesRouter);
 app.use('/contacto', contactoRouter);
 app.use('/contactoa', contactoaRouter);
 app.use('/registro', registroRouter);
-app.use('/auth', authRouter);
-app.use('/comentarios', comentariosRouter);
+//app.use('/auth', authRouter);
+//app.use('/comentarios', comentariosRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
