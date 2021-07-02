@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -15,7 +15,6 @@
     <script src="https://kit.fontawesome.com/7e91826d21.js" crossorigin="anonymous"></script>
     <title>Kakidraws</title>
 </head>
-
 <body class="cuerpo">
     <nav class="header">
         <input type="checkbox" id="check">
@@ -35,18 +34,22 @@
         </ul>
     </nav>
         <div class="login-form">
-            <h1>Iniciar sesion</h1>
-            <form action="/auth/contactoa" method="POST">
-                <input type="text" name="email" placeholder="Email" required>
-                <input type="password" name="password" placeholder="Contraseña" required>
-                <input type="submit" placeholder="Conectarse">
-                <a href="/registro"><h6>¿No tenes cuenta? ¡Registrate!</h6></a>
-            </form>
-        </div>
+        <form action="/auth/comentarios" method="POST">
+            <div class="mb-3">
+                <h1>¡Dejanos un mensaje!</h1>
+                <input type="text" name="username" placeholder="Usuario" required>
+                <input type="text" name="comentario" placeholder="Escriba su mensaje" required>
+                <input type="submit" placeholder="Enviar">
+            </div>
+        </form>
+        <form action="/auth/comisionesa" method="POST" style="text-align: center;">
+        <button name="field_name" value="submitted_value" class="btn btn-success">¡Ver comentarios!</button>
+        </form>
         {{#if message}}
             <h4 class="alert alert-danger mt-4">{{message}}</h4>
         {{/if}}
-    <div class="contactos">
+    </div>
+        <div class="contactos">
         <div class="izq">
             <a href="https://www.instagram.com/kakidraws_/" target="_blank"><img src="/images/instagram.png"
                     alt=""><span>Instagram</span></a>
@@ -83,10 +86,10 @@
             <li>
                 <h2>Links utiles</h2>
                 <ul class="box">
-                    <li><a href="acerca.html">Acerca de mi</a></li>
-                    <li><a href="trabajos.html">Mis trabajos</a></li>
-                    <li><a href="tienda.html">Comisiones</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="/acerca">Acerca de mi</a></li>
+                    <li><a href="/trabajos">Mis trabajos</a></li>
+                    <li><a href="/comisiones">Comisiones</a></li>
+                    <li><a href="/contacto">Contacto</a></li>
                 </ul>
             </li>
             <li>

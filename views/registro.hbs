@@ -34,18 +34,22 @@
             <li><a href="/contacto" class="activo">Contacto</a></li>
         </ul>
     </nav>
-        <div class="login-form">
-            <h1>Iniciar sesion</h1>
-            <form action="/auth/contactoa" method="POST">
-                <input type="text" name="email" placeholder="Email" required>
-                <input type="password" name="password" placeholder="Contraseña" required>
-                <input type="submit" placeholder="Conectarse">
-                <a href="/registro"><h6>¿No tenes cuenta? ¡Registrate!</h6></a>
-            </form>
-        </div>
+    <div class="reg-form">
+        <h1>Registrarse</h1>
+        <form action="/auth/registro" method="POST">
+            <input type="text" name="username" placeholder="Usuario" required>
+            <input type="password" name="password" placeholder="Contraseña" required>
+            <input type="password" name="confirmPassword" placeholder="Confirmar contraseña" required>
+            <input type="text" name="email" placeholder="Email" required>
+            <input type="submit" placeholder="Registrarse">
+            <a href="/contacto">
+                <h6>Volver</h6>
+            </a>
+        </form>
         {{#if message}}
-            <h4 class="alert alert-danger mt-4">{{message}}</h4>
+        <h4 class="alert alert-danger mt-4">{{message}}</h4>
         {{/if}}
+    </div>
     <div class="contactos">
         <div class="izq">
             <a href="https://www.instagram.com/kakidraws_/" target="_blank"><img src="/images/instagram.png"
@@ -67,7 +71,9 @@
     <footer class="footer">
         <div class="footer-left">
             <img src="/images/Kakilogo.png" alt="" class="coki">
-            <p>Bienvenidos a mi pagina, aca van a poder conocer un poco mas de mi, ver mis trabajos y hasta pueden ponerse en contacto conmigo. Todo el arte de esta pagina esta hecho por mi. Sin nada mas que agregar disfruten su paso por mi pagina y ante cualquier duda contactenme.</p>
+            <p>Bienvenidos a mi pagina, aca van a poder conocer un poco mas de mi, ver mis trabajos y hasta pueden
+                ponerse en contacto conmigo. Todo el arte de esta pagina esta hecho por mi. Sin nada mas que agregar
+                disfruten su paso por mi pagina y ante cualquier duda contactenme.</p>
             <div class="socials">
                 <a href="https://www.deviantart.com/kakidraws" target="_blank" rel="noreferrer noopener"><i
                         class="bi-brush"></i></a>
@@ -83,10 +89,10 @@
             <li>
                 <h2>Links utiles</h2>
                 <ul class="box">
-                    <li><a href="acerca.html">Acerca de mi</a></li>
-                    <li><a href="trabajos.html">Mis trabajos</a></li>
-                    <li><a href="tienda.html">Comisiones</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="/acerca">Acerca de mi</a></li>
+                    <li><a href="/trabajos">Mis trabajos</a></li>
+                    <li><a href="/comisiones">Comisiones</a></li>
+                    <li><a href="/contacto">Contacto</a></li>
                 </ul>
             </li>
             <li>

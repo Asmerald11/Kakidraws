@@ -81,46 +81,64 @@
                 <a href="https://www.instagram.com/kakidraws_/" target="_blank" class="btn btn-primary">Go somewhere</a>
             </div>
         </div>
-        <form action="/auth/comisionesa" method="POST"
-            style="text-align: center; align-content: center; margin: 0 auto;">
-            <button name="field_name" value="submitted_value" class="btn btn-success">¡Ver comentarios!</button>
-        </form>
     </div>
-
-<footer class="footer">
-    <div class="footer-left">
-        <img src="/images/Kakilogo.png" alt="" class="coki">
-        <p>Bienvenidos a mi pagina, aca van a poder conocer un poco mas de mi, ver mis trabajos y hasta pueden ponerse en contacto conmigo. Todo el arte de esta pagina esta hecho por mi. Sin nada mas que agregar disfruten su paso por mi pagina y ante cualquier duda contactenme.</p>
-        <div class="socials">
-            <a href="https://www.deviantart.com/kakidraws" target="_blank" rel="noreferrer noopener"><i class="bi-brush"></i></a>
-            <a href="https://twitter.com/kakidraws_" target="_blank" rel="noreferrer noopener"><i class="bi-twitter"></i></a>
-            <a href="https://www.instagram.com/kakidraws_/" target="_blank" rel="noreferrer noopener"><i class="bi-instagram"></i></a>
-            <a href="https://www.tiktok.com/@kakidraws_?lang=es" target="_blank" rel="noreferrer noopener"><i class="bi-music-note"></i></a>
+<table style="border:3px solid #7A7AC2; width: 50%; margin-left: 25%; margin-right: 25%; margin-top: 20px;">
+    <tbody style="border:1px solid #7A7AC2;">
+            <tr>
+                <th style="border:3px solid #7A7AC2; text-align:center;">Usuario</th>
+                <th style="border:3px solid #7A7AC2; text-align:center;">Mensaje</th>
+            </tr>
+        {{#each data}}
+            <tr>
+                <td style="border:3px solid #7A7AC2;">{{this.usuario}}</td>
+                <td style="border:3px solid #7A7AC2;">{{this.comentario}}</td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>
+    <footer class="footer">
+        <div class="footer-left">
+            <img src="/images/Kakilogo.png" alt="" class="coki">
+            <p>Bienvenidos a mi pagina, aca van a poder conocer un poco mas de mi, ver mis trabajos y hasta pueden ponerse en contacto conmigo. Todo el arte de esta pagina esta hecho por mi. Sin nada mas que agregar disfruten su paso por mi pagina y ante cualquier duda contactenme.</p>
+            <div class="socials">
+                <a href="https://www.deviantart.com/kakidraws" target="_blank" rel="noreferrer noopener"><i
+                        class="bi-brush"></i></a>
+                <a href="https://twitter.com/kakidraws_" target="_blank" rel="noreferrer noopener"><i
+                        class="bi-twitter"></i></a>
+                <a href="https://www.instagram.com/kakidraws_/" target="_blank" rel="noreferrer noopener"><i
+                        class="bi-instagram"></i></a>
+                <a href="https://www.tiktok.com/@kakidraws_?lang=es" target="_blank" rel="noreferrer noopener"><i
+                        class="bi-music-note"></i></a>
+            </div>
         </div>
-    </div>
-    <ul class="footer-right">
-        <li>
-            <h2>Links utiles</h2>
-            <ul class="box">
-                <li><a href="/acerca">Acerca de mi</a></li>
-                <li><a href="/trabajos">Mis trabajos</a></li>
-                <li><a href="/comisiones">Comisiones</a></li>
-                <li><a href="/contacto">Contacto</a></li>
-            </ul>
-        </li>
-        <li>
-            <h2>Diseñador web</h2>
-            <ul class="box">
-                <li><a href="https://www.facebook.com/santiago.morelli.3" target="_blank" rel="noreferrer noopener">Facebook</a></li>
-                <li><a href="https://twitter.com/SantiMorelli21" target="_blank" rel="noreferrer noopener">Twitter</a></li>
-                <li><a href="https://www.instagram.com/santinmorelli/" target="_blank" rel="noreferrer noopener">Instagram</a></li>
-                <li><a href="https://github.com/Asmerald11" target="_blank" rel="noreferrer noopener">GitHub</a></li>
-            </ul>
-        </li>
-    </ul>
-    <div class="footer-bottom">
-        <p>All Rights reserved by &copy;Kakidraws 2021</p>
-    </div>
-</footer>
+        <ul class="footer-right">
+            <li>
+                <h2>Links utiles</h2>
+                <ul class="box">
+                    <li><a href="/acerca">Acerca de mi</a></li>
+                    <li><a href="/trabajos">Mis trabajos</a></li>
+                    <li><a href="/comisiones">Comisiones</a></li>
+                    <li><a href="/contacto">Contacto</a></li>
+                </ul>
+            </li>
+            <li>
+                <h2>Diseñador web</h2>
+                <ul class="box">
+                    <li><a href="https://www.facebook.com/santiago.morelli.3" target="_blank"
+                            rel="noreferrer noopener">Facebook</a></li>
+                    <li><a href="https://twitter.com/SantiMorelli21" target="_blank"
+                            rel="noreferrer noopener">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/santinmorelli/" target="_blank"
+                            rel="noreferrer noopener">Instagram</a></li>
+                    <li><a href="https://github.com/Asmerald11" target="_blank" rel="noreferrer noopener">GitHub</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="footer-bottom">
+            <p>All Rights reserved by &copy;Kakidraws 2021</p>
+        </div>
+    </footer>
 </body>
+
 </html>
