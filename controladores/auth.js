@@ -1,4 +1,4 @@
-const mysql = require('mysql2');
+/*const mysql = require('mysql2');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 
@@ -111,3 +111,4 @@ exports.coments = (req, res) => {
             res.render('comisionesa', {data: results});           
         }
     })};
+*/
