@@ -3,12 +3,12 @@ const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 
 // coneccion a la base de datos
-let connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'utnweb21-',
-    database: 'kakiusuarios'
-});
+//let connection = mysql.createConnection({
+    //host: 'localhost',
+    //user: 'root',
+    //password: 'utnweb21-',
+    //database: 'kakiusuarios'
+//});
 
 // funcion de login
 exports.login = async (request, response) => {
