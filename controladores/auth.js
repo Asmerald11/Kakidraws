@@ -1,4 +1,4 @@
-/*const mysql = require('mysql2');
+const mysql = require('mysql2');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 
@@ -104,11 +104,11 @@ exports.coments = (req, res) => {
             console.log("Error: ",error);
             res.send({
                 "code": 400,
-                "failed": "Error occurred"
+                "failed": "Ocurrio un error"
             });
         } else {
             console.log("Results: ", results);
             res.render('comisionesa', {data: results});           
         }
     })};
-*/
+
