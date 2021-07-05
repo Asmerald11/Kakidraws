@@ -52,3 +52,7 @@ Cookie-parser, Dotenv, Handlebars, Hbs, Http-errors, Jsonwebtoken, Morgan, Mysql
 - Vistas
 
   El proyecto esta hecho en un sistema de vistas basado en Handlebars.
+  
+- Google fonts
+
+  La fuente del 'body' y algunos 'h' asi tambien como la fuente del 'logo Kakidraws' fue modificada con Google fonts.
